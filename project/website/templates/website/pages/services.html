@@ -1,0 +1,218 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %} {% translate 'projects' %} {% endblock %} 
+
+
+{% block stylesheet %} 
+<style>
+        
+
+
+
+
+/*** Hero Header ***/
+.hero-header-main {
+    margin-bottom: 1rem;
+    padding: 16rem 0 0 0;
+    background:
+        url({% static 'assets/img/bg-circle.png' %} ),
+        url({% static 'assets/img/bg-triangle.png' %} ),
+       
+        linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-position:
+        left 0px top 0px,
+        right 0px top 50%,
+        center bottom;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991.98px) {
+    .hero-header-main {
+        padding: 6rem 0 9rem 0;
+    }
+}
+
+
+
+
+
+
+
+/*** Service ***/
+.service-items {
+    position: relative;
+    padding: 45px 30px;
+    background: var(--light);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.service-items:hover {
+    margin-top: -15px;
+    padding-bottom: 60px;
+    background: var(--primary);
+}
+
+.service-items .service-icon {
+    margin: 0 auto 20px auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    background: url({% static 'assets/images/blob-primary.png' %}) center center no-repeat;
+    background-size: contain;
+    transition: .5s;
+}
+
+.service-items:hover .service-icon {
+    color: var(--dark);
+    background: url({% static 'assets/images/blob-secondary.png' %}) center center no-repeat;
+    background-size: contain;
+}
+
+.service-items h5,
+.service-items p {
+    transition: .5s;
+}
+
+.service-items:hover h5,
+.service-items:hover p {
+    color: #FFFFFF;
+}
+
+.service-items a.btn {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--primary);
+    background: #FFFFFF;
+    border-radius: 40px 40px 0 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-items a.btn:hover {
+    color: var(--dark);
+    background: var(--secondary);
+}
+
+.service-items:hover a.btn {
+    bottom: 0;
+}
+
+</style>
+{% endblock %} 
+
+{% block bodyweb %}
+
+ <!-- Navbar & Hero Start -->
+ <div class="container-xxl position-relative p-0">
+    <div class="container-xxl py-5 bg-primary hero-header-main">
+        <div class="container my-5 py-5 px-lg-5">
+            <div class="row g-5 py-5">
+                <div class="col-12 text-center">
+                    <h1 class="text-white animated slideInDown">المشاريع</h1>
+                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+   <!-- Service Start -->
+  
+<!-- Service End -->
+
+
+
+<div class="container-xxl py-5">
+    <div class="container py-5 px-lg-5">
+       
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+            <h5 class="text-primary-gradient fw-medium">                        خدمات رقمنة
+            </h5>
+            <h1 class="mb-5">
+                خدمات تناسب احتياجك الرقمي
+
+            </h1>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="service-items d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-search fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">SEO Optimization</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="service-items d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-laptop-code fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Web Design</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="service-items d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Social Media Marketing</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-mail-bulk fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Email Marketing</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">PPC Advertising</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fab fa-android fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">App Development</h5>
+                    <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

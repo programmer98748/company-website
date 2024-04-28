@@ -1,0 +1,359 @@
+{% extends 'website/base.html' %}
+{% load i18n %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% load static %}
+ 
+{% block title %} {% translate 'home' %} {% endblock %} 
+{% block bodyweb %}
+
+
+   <!-- Navbar & Hero Start -->
+   <div class="container-xxl position-relative p-0" id="home">
+   
+
+    <div class="container-xxl bg-primary hero-header">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-8 text-center text-lg-start" dir="rtl">
+                    <h1 class="text-white mb-4 animated slideInDown "  style="text-align: center; font-size: 40px;" >مؤسسة موثوقة لبناء منتجات عالية الجودة</h1>
+                    <p class="text-white pb-3 animated slideInDown " style="text-align:center ;">مؤسسة موثوقة لبناء منتجات عالية الجودةمؤسسة موثوقة لبناء منتجات عالية الجودةمؤسسة موثوقة لبناء منتجات عالية الجودة</p>
+                    <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" style="text-align: right;">ابدء الان</a>
+                    <a href="" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">اتصل بنا </a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s" dir="ltr">
+                    <div class="owl-carousel screenshot-carousel">
+                        <img class="img-fluid" src="https://rqmanh.com/dashboard/public/images/20240311233847_original__media_56.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'assets/img/screenshot-2.png' %}" alt="">
+                        <img class="img-fluid" src="{% static 'assets/img/screenshot-3.png' %}" alt="">
+                        <img class="img-fluid" src="{% static 'assets/img/screenshot-4.png' %}" alt="">
+                        <img class="img-fluid" src="{% static 'assets/img/screenshot-5.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5 class="text-primary-gradient fw-medium">خدماتنا</h5>
+                    <h1 class="mb-5">خدمات تناسب احتياجك الرقمي</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">تحسين محركات البحث
+                            </h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-laptop-code fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">تصميم المواقع
+                            </h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">التسويق عبر وسائل التواصل الاجتماعي
+                            </h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Email Marketing</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fab fa-android fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">التسويق عبر وسائل التواصل الاجتماعي
+                            </h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">قراءت المزيد</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">تطوير التطبيقات</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-fluid bg-primary feature pt-5">
+            <div class="container pt-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">لماذا نحنوا</div>
+                        <h1 class="text-white mb-4">لماذا GRE هي خيارك الأفضل ؟</h1>
+                        <p class="text-light mb-4">                    هدفنا الأساسي هو مصلحة عملائنا، لذلك نحن نستمر ببذل الجهود الممكنة لتقديم العديد من العروض التي تميزنا عن غيرنا، والتي تشمل:
+                        </p>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>برمجة آمنة وخالية من الأخطاء</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>برمجة آمنة وخالية من الأخطاء</span>
+                        </div>
+                        <div class="d-flex align-items-center text-white mb-3">
+                            <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <span>برمجة آمنة وخالية من الأخطاء</span>
+                        </div>
+                        <div class="row g-4 pt-3">
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <i class="fa fa-users fa-3x text-white"></i>
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                        <p class="text-white mb-0">Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                    <i class="fa fa-check fa-3x text-white"></i>
+                                    <div class="ms-3">
+                                        <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                        <p class="text-white mb-0">Project Complete</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                        <img class="img-fluid" src="{% static 'assets/img/feature.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+
+         <!-- Project Start -->
+
+
+                <div class="container-xxl py-5" dir="ltr" style="text-align: right;">
+                    <div class="container px-lg-5">
+                        
+                        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                            <h5 class="text-primary-gradient fw-medium">مشاريعنا</h5>
+                            <h1 class="mb-5">تعرف على  مشاريعنا الكاملة</h1>
+                        </div>
+
+                
+                <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item border rounded h-100 p-4" data-dot="01">
+                        <div class="position-relative mb-4">
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="">
+
+                            <a href="img/testimonial-1.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        </div>
+                        <h6>UI / UX Design</h6>
+                        <span>Digital agency website design and development</span>
+                    </div>
+                    <div class="project-item border rounded h-100 p-4" data-dot="02">
+                        <div class="position-relative mb-4">
+                            <img class="img-fluid rounded" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="">
+
+                            <a href="img/testimonial-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        </div>
+                        <h6>UI / UX Design</h6>
+                        <span>Digital agency website design and development</span>
+                    </div>
+                    <div class="project-item border rounded h-100 p-4" data-dot="03">
+                        <div class="position-relative mb-4">
+                            <img class="img-fluid rounded" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="">
+
+                            <a href="img/testimonial-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        </div>
+                        <h6>UI / UX Design</h6>
+                        <span>Digital agency website design and development</span>
+                    </div>
+                    <div class="project-item border rounded h-100 p-4" data-dot="04">
+                        <div class="position-relative mb-4">
+                            <img class="img-fluid rounded" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="">
+                            <a href="img/testimonial-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        </div>
+                        <h6>UI / UX Design</h6>
+                        <span>Digital agency website design and development</span>
+                    </div>
+                    <div class="project-item border rounded h-100 p-4" data-dot="05">
+                        <div class="position-relative mb-4">
+                            <img class="img-fluid rounded" src="{% static 'assets/img/portfolio-1.jpg' %}" alt="">
+                            <a href="img/testimonial-1.jpg" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                        </div>
+                        <h6>UI / UX Design</h6>
+                        <span>Digital agency website design and development</span>
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
+        <!-- Project End -->
+                   
+
+        <!-- Process Start 
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">How It Works</h5>
+                    <h1 class="mb-5">3 Easy Steps</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Install the App</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Setup Your Profile</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Enjoy The Features</h5>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         Process Start -->
+
+
+        <!-- Testimonial Start -->
+
+                
+                
+
+        <div class="container-xxl py-5" id="review" dir="ltr">
+            <div class="container py-5 px-lg-5">
+                
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <h5 class="text-primary-gradient fw-medium">شهاده
+                    </h5>
+                                        <h1 class="mb-5">ماذا يقول عملاؤنا!
+                    </h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                   
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'assets/img/testimonial-1.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="text-align: right;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'assets/img/testimonial-1.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="text-align: right;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'assets/img/testimonial-1.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Client Name</h5>
+                                <p class="mb-1">Profession</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0" style="text-align: right;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        
+        <!-- Contact End -->
+
+{% endblock %}

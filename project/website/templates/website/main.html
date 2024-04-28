@@ -1,0 +1,327 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+
+<!DOCTYPE html>
+<html lang="en" dir='rtl'>
+
+<head>
+    <meta charset="utf-8">
+    <title> {% block title %} / {% endblock %} </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'assets/img/favicon.ico" rel="icon">
+
+       <!-- Google Web Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+   
+       <!-- Icon Font Stylesheet -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+   
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'assets/lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="7777https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+    {% block stylesheet %}  {% endblock %} 
+    <link rel="stylesheet" href="{% static 'assets/assets/css/plugins.css' %}" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/assets/css/responsive.css' %}" />
+
+
+    <style>
+        .p {
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        /* margin-block-end: 0;
+
+    */
+        // <uniquifier>: Use a uniquifier for the class name
+        // <weight>: Use a value from 100 to 900
+
+        .noto-sans arabic-<uniquifier> {
+            font-family: "Noto Sans Arabic", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings:
+                "wdth"100;
+        }
+
+        // <uniquifier>: Use a uniquifier for the class name
+        // <weight>: Use a value from 200 to 1000
+
+        .cairo-<uniquifier> {
+            font-family: "Cairo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings:
+                "slnt"0;
+        }
+
+
+
+        @media (max-width: 1024px) and (min-width: 768px) {
+            .elementor-16 {
+                --width: 60%;
+            }
+        }
+
+
+        .col-md-4 .imagess {
+            display: block;
+            margin: 30px auto;
+            height: auto;
+
+        }
+
+        @media (max-width: 575px) {
+            .col-md-4 .imagess {
+                margin: 0 auto;
+            }
+
+        }
+
+        a{ font-weight:bold;}
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" class="template-index index-demo15">
+
+                    <!-- Spinner Start -->
+                    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="sr-only">Loading...</span>
+                         </div>
+                    </div>
+                    <!-- Spinner End -->   
+    <!--Page Wrapper-->
+       <div class="page-wrapper">
+        <!--Header-->
+
+        <!--Header-->
+        <div id="header" class="header-3">
+            <!--Topbar-->
+            <!--End Topbar-->
+            <!--Header Content-->
+            <div class="header-main mih-80 classicHeader d-flex align-items-center fadeInDown">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--Logo / Menu Toggle-->
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-2 align-self-center justify-content-start d-flex">
+                            <!--Mobile Toggle-->
+                            <!--End Mobile Toggle-->
+                            <!--Logo-->
+                            <div class="logo text-center">
+                                <a href="{% url 'website:index' %}">
+                                    <img src="https://rqmanh.com/public/website/assets/images/logos/logo-light.png"
+                                        class="logo-img default-logo mh-100"
+                                        alt="Optimal Multipurpose eCommerce Bootstrap 5 Html Template"
+                                        title="Optimal Multipurpose eCommerce Bootstrap 5 Html Template"
+                                        style="margin:0 auto;" width="130" />
+                                    <img src="https://website.pythonanywhere.com/media/logo/IMG_20240427_233657.jpg"
+                                        class="logo-img sticky-logo mh-100"
+                                        alt="Optimal Multipurpose eCommerce Bootstrap 5 Html Template"
+                                        title="Optimal Multipurpose eCommerce Bootstrap 5 Html Template" width="130"
+                                        style="margin:0 auto;" />
+                                    <span class="logo-txt d-none">سراج</span>
+                                </a>
+                            </div>
+                            <!--End Logo-->
+                        </div>
+                        <!--End Logo / Menu Toggle-->
+                        <!--Main Navigation Desktop-->
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-7 col-xl-8 align-self-center d-menu-col">
+                            <!--Desktop Menu-->
+                            <nav class="grid__item" id="AccessibleNav">
+                                <ul id="siteNav" class="site-nav medium center hidearrow ">
+
+                                    <li class="lvl1 parent megamenu">
+                                        <a href="{% url 'website:index' %}" class="nav-item nav-link active"> الصفحة الرئسية</a>
+
+                                        
+
+                                    </li>
+                                    <li class="lvl1 parent megamenu">
+                                        <a href="#contact" >اتصل بنا</a>
+
+
+                                    </li>
+                                    <li class="lvl1 parent megamenu">                        
+                                        <a href="{% url 'website:services' %}" >الخدمات</a>
+
+
+                                    </li>
+
+                                    <li class="lvl1 parent dropdown">
+                                        <a href="{% url 'website:project' %}" >المشاريع</a>
+
+
+                                    </li>
+                                    
+                                </ul>
+                            </nav>
+                            <!--End Desktop Menu-->
+                        </div>
+                        <!--End Main Navigation Desktop-->
+                        <!--Right Action-->
+                        <div
+                            class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2 align-self-center icons-col text-right d-flex justify-content-end">
+                            
+                            <div class="user-link iconset text-black" style="margin: 0 30px;"><i class="icon an an-user-expand"></i><span class="tooltip-label">{% trans 'dashboard' %}</span></div>
+                          
+                            
+
+                            
+
+                            <button type="button"
+                                class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open me-3 d-lg-none "><i
+                                    class="icon an an-times-l text-black"></i><i class="icon an an-bars-l text-black"></i></button>
+
+                        </div>
+                        <!--End Right Action-->
+                    </div>
+                </div>
+                <!--Search Popup-->
+              
+                <!--End Search Popup-->
+            </div>
+            <!--End Header Content-->
+        </div>
+        <!--End Header-->
+        <!--Mobile Menu-->
+        <div class="mobile-nav-wrapper" role="navigation" >
+            <div class="closemobileMenu"><i class="icon an an-times-l pull-right"></i>
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="https://rqmanh.com/public/website/assets/images/logos/logo-light.png"
+                            class="logo-img sticky-logo mh-100"
+                            alt="Optimal Multipurpose eCommerce Bootstrap 5 Html Template"
+                            title="Optimal Multipurpose eCommerce Bootstrap 5 Html Template" width="130"
+                            style="margin:0 auto;" />
+                    </a>
+                </div>
+            </div>
+            <ul id="MobileNav" class="mobile-nav">
+                <li class="lvl1 parent megamenu"><a href="#;"> {% trans 'Home' %} </a>
+
+                </li>
+                <li class="lvl1 parent megamenu"><a href="#;"> {% translate 'About Us' %}</a>
+
+                </li>
+                <li class="lvl1 parent megamenu"><a href="#;"> {% translate 'Our Services' %}</a>
+
+                </li>
+
+                <li class="lvl1 parent dropdown"><a href="{% url 'website:project' %}"> {% translate 'Projects' %}</a>
+
+                </li>
+               
+                <li class="acLink"></li>
+                <li class=" bottom-link">
+                    <ul class="list-inline social-icons mt-3 pt-1">
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Facebook" aria-label="Facebook"><i class="an an-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Twitter" aria-label="Twitter"><i class="an an-twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Instagram" aria-label="Instagram"><i class="an an-instagram" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Whatsapp" aria-label="Whatsapp"><i class="an an-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!--End Mobile Menu-->
+
+
+        <!--End Mobile Menu-->
+
+
+        <!--End Mobile Menu-->
+
+        <!--Body Container-->
+        <div id="page-content">
+
+
+
+            <div class="">
+
+        
+        
+                <!-- Navbar & Hero Start -->
+               
+                <!-- Navbar & Hero End -->
+        
+        
+                {% block bodyweb %}
+        
+                {% endblock %}
+        
+        
+                
+        
+                
+                <!--Footer -->
+        
+               
+            </div>
+
+        </div>
+
+        {% include 'website/includes/footer.html' %}
+        
+        <!--End Footer-->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+        <!--End Body Container-->
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+       integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'assets/lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'assets/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'assets/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'assets/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'assets/lib/isotope/isotope.pkgd.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/assets/js/main.js' %}"></script>
+
+            <!-- Including Jquery -->
+            <script src="{% static 'assets/assets/js/vendor/jquery-min.js' %}"></script>
+            <script src="{% static 'assets/assets/js/vendor/js.cookie.js' %}"></script>
+            <!--Including Javascript-->
+            <script src="{% static 'assets/assets/js/plugins.js' %}"></script>
+            <script src="{% static 'assets/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
